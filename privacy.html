@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | NairaLook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+            color: #111827;
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen  flex flex-col">
+
+    <!-- Navigation -->
+    <header class="border-b-2 border-gray-200 bg-white sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <img src="./logo.png" alt="NairaLook Logo" style="width:150px; border-radius:12px; object-fit:cover;">
+            </a>
+            <nav class="flex gap-6 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-[#069406] transition-colors">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="flex-grow py-16 px-6">
+        <div class="max-w-3xl mx-auto prose prose-green prose-lg">
+            <h1 class="text-4xl font-extrabold mb-8">Privacy Policy</h1>
+            <p class="text-gray-500 mb-10">Last updated: February 25, 2026</p>
+
+            <div class="space-y-8 text-gray-700 leading-relaxed">
+
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-100 pb-2">1. Introduction
+                    </h2>
+                    <p>
+                        Welcome to NairaLook ("we", "our", or "us"). We respect your privacy and are deeply committed to
+                        protecting it. This Privacy Policy explains what information we collect, how we use it, and how
+                        your data is handled when you use the NairaLook Chrome Extension.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-100 pb-2">2. Information
+                        Collection</h2>
+                    <p class="font-bold text-[#069406] mb-2">We do not collect, store, or transmit your personal data.
+                    </p>
+                    <p>
+                        Our extension is built on a principle of absolute local processing. The extension operates
+                        entirely within your browser on your local machine.
+                    </p>
+                    <ul class="list-disc pl-6 mt-4 space-y-2">
+                        <li><strong>No Personal Information:</strong> We do not ask for or collect any names, emails,
+                            IPs, or identifying information.</li>
+                        <li><strong>No Tracking:</strong> We do not track websites you visit, links you click, or your
+                            browsing history.</li>
+                        <li><strong>No Analytic Telemetry:</strong> We do not embed silent analytics trackers in our
+                            extension code.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-100 pb-2">3. Required Chrome
+                        Permissions Explained</h2>
+                    <p>Our extension strictly requests the bare minimum permissions necessary to function:</p>
+                    <ul class="list-disc pl-6 mt-4 space-y-3">
+                        <li>
+                            <strong>Host Permissions (Read Data on Webpages):</strong> This is required solely to allow
+                            the extension to scan the text of the webpage you are actively viewing to locate currency
+                            symbols (like $ and £) and mathematically convert them into Naira. This DOM scanning happens
+                            entirely locally on your machine. The scanned text is <strong>never</strong> sent back to us
+                            or any third-party server.
+                        </li>
+                        <li>
+                            <strong>Storage:</strong> Used strictly to save your preferred exchange rate window (e.g.,
+                            Parallel vs. I&E) and cache the latest live FX rates locally so your browser doesn't need to
+                            constantly re-download them.
+                        </li>
+                        <li>
+                            <strong>Alarms:</strong> Used to schedule a background task that quietly refreshes the live
+                            FX rates every 30 minutes from our API.
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-100 pb-2">4. Third-Party API
+                        Requests</h2>
+                    <p>
+                        To perform accurate mathematical conversions, the extension periodically makes a purely
+                        anonymous GET request to our secure API server (hosted on Vercel) to retrieve the latest live
+                        Naira exchange rates. This request contains zero user data or identifiers.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-100 pb-2">5. Changes to this
+                        Policy</h2>
+                    <p>
+                        If we make significant changes to this privacy policy that involve the collection of user data
+                        (which we do not foresee ever doing), we will post the updated policy here and update the "Last
+                        Updated" date.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-100 pb-2">6. Contact Us</h2>
+                    <p>
+                        If you have any questions or concerns about this privacy policy, the practices of the NairaLook
+                        extension, or your dealings with it, please feel free to reach out via our GitHub repository or
+                        Twitter.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t-2 border-gray-200 py-10 mt-auto">
+        <div class="max-w-4xl mx-auto px-6 text-center text-gray-500 text-sm font-medium">
+            <p>&copy; 2026 NairaLook. Designed for Nigerians. Free forever.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
