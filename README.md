@@ -39,10 +39,16 @@ A convenient browser extension to view real-time Naira exchange rates without le
    ```
 
 ### Installing the Chrome Extension
-1. Open Google Chrome and navigate to `chrome://extensions/`.
-2. Enable **Developer mode** in the top right corner.
-3. Click **Load unpacked** and select the `Extension` directory from this repository.
-4. The extension icon will appear in your toolbar.
+1. Before installing, open `Extension/background.js` in a text editor.
+2. Replace the placeholder `API_URL` and `API_KEY` with your own hosted API URL and key:
+   ```javascript
+   const API_URL = 'http://localhost:3000/api/rates'; 
+   const API_KEY = 'your_api_key_here';
+   ```
+3. Open Google Chrome and navigate to `chrome://extensions/`.
+4. Enable **Developer mode** in the top right corner.
+5. Click **Load unpacked** and select the `Extension` directory from this repository.
+6. The extension icon will appear in your toolbar.
 
 ## Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
