@@ -1,0 +1,37 @@
+.nairalook-trigger {
+  border-bottom: 2px dashed #069406;
+  cursor: help;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.nairalook-trigger:hover {
+  background-color: rgba(0, 204, 0, 0.1);
+  border-bottom-style: solid;
+}
+
+#nairalook-fx-tooltip {
+  position: absolute;
+  z-index: 2147483647;
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  pointer-events: none;
+  border: 1px solid #069406;
+  transition: opacity 0.2s ease;
+}
+
+#nairalook-fx-tooltip strong {
+  font-size: 20px;
+  color: #04c704;
+}
+
+.nl-rate-type {
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 8px;
+}
